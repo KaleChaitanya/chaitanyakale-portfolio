@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+body{
+    font-family: 'Noto Serif', serif;
+    margin:0px auto;
+    /* max-width: 85%; */
+    width: 100%;  
+}
+:root{
+    --primary-color:#4ade80;
+    --gray-color:#6b7280;
+    --off-white:#f3f4f6;
+}
+/* container */
+.container{
+    padding: 0px 1rem;
+}
+/* container center */
+.container-center{
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+
+/* links */
+.link{    
+    box-sizing: border-box;
+    text-decoration:none;
+    padding: 0.5rem 1rem;
+}
+.link-primary{
+    max-width: 140px;
+    padding: 0.5rem 1.2rem;
+    background-color: var(--primary-color);
+    color: black;
+    margin: 1rem auto;
+    border-radius: 2rem;
+}
+.link-secondary{
+    max-width: 140px;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+/* list */
+.no-bullet-item{
+    list-style: none;
+    padding-inline-start: 0px;
+}
+.list-item-inline{
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+/* navbar */
+.navbar{
+    background-color: var(--primary-color);
+    color: black;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.navbar .brand-name{
+    font-weight: bold;
+}
+.brand-name a{
+    text-decoration: none;
+    color: inherit;
+}
+.navbar .nav-link{
+    text-align: right;
+    margin: 0.6rem 1rem;
+}
+.navbar .link{
+    color: black;
+}
+
+.navbar .link-active{
+    font-weight: bold;
+}
+
+/* header */
+.hero{
+    padding: 2rem;
+    padding-top: 5rem;
+}
+.hero .hero-img{
+    max-width: 80%;
+    width: 550px;
+    display: block;
+    margin: auto;
+}
+.hero .hero-heading{
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--gray-color);
+}
+.hero .hero-heading .hero-sub-heading{
+    color: var(--primary-color);
+}
+/* section */
+.section{
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    text-align: center;
+}
+.section h1{
+    text-align: center;
+}
+.ow{
+    background-color: var(--off-white);
+}
+/* footer */
+.footer{
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: black;
+    border-top-right-radius: 1rem;
+}
+.footer .link{
+    color: black;
+}
+.footer .footer-header{
+    font-weight: bold;
+    font-size: large;
+}
+.footer ul{
+    padding-inline-start: 0px   ;
+}
