@@ -111,6 +111,13 @@ body{
 .ow{
     background-color: var(--off-white);
 }
+.blog-para{
+    font-weight: bold;
+}
+.blog-container{
+    margin: 1rem 1rem;
+    align-content: center;
+}
 /* footer */
 .footer{
     background-color: var(--primary-color);

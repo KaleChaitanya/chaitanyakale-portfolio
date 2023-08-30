@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Chaitanya Kale</title>
+    <link rel="icon" type="image/x-icon" href="images/chaitanya.png" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- navbar start here -->
+    <nav class="navbar container">
+      <div class="brand-name"><a class="link" href="/">Chaitanya Kale</a></div>
+      <ul class="no-bullet-item nav-link">
+        <li class="list-item-inline no-bullet-item">
+          <a class="link" href="/">Home</a>
+        </li>
+        <li class="list-item-inline no-bullet-item">
+          <a class="link" href="/projects.html">Projects</a>
+        </li>
+        <li class="list-item-inline no-bullet-item">
+          <a class="link link-active" href="/blogs.html">Blogs</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar ends here -->
+    <h3 style="text-align: center">
+      In this post we see how to push files on GitHub using Git
+    </h3>
+    <div class="blog-container">
+      <h4>So, first of all let's understand the Basic Concepts.</h4>
+      <h5>What is GitHub?</h5>
+      <p>
+        GitHub is distributed version control. Using GitHub you can frame your
+        code. In future suppose you want your previous code file with the help
+        of GitHub you can easily find. In GitHub they provide two sections
+        public and private. The public part is free but you want to push your
+        code in private. In that case you paid some amount .In the private
+        section you can store your private code that you do not want to explore
+        publicly. These kinds of things you can push to a private repository.
+        Repository is nothing but the folder where you can store your data.
+      </p>
+      <h5>What is Git?</h5>
+      <p>
+        Git also has open-source distributed version control. Git is designed in
+        the Unix base system that’s why it looks like a Linux command. With the
+        help of Git you can push your code local directory to GitHub. Using some
+        commands.
+      </p>
+
+      <h4>So, In this part we see some Commands.</h4>
+      <p>Those helpful to do operations.</p>
+      <p>
+        <span class="blog-para">1. git status: </span>the help of this command,
+        you can check the current status of the directory.
+      </p>
+      <p>
+        <span class="blog-para">2. git init: </span>With the help of this
+        command Initialize the git repository.
+      </p>
+      <p>
+        <span class="blog-para">3. git add. :</span>Add working directory to
+        stage directory.
+      </p>
+      <p>
+        <span class="blog-para">4.git commit -m “”: </span> In Double quotes you
+        can write any message/comment .That is helpful to understand you and
+        another programmer also.
+      </p>
+      <p>
+        <span class="blog-para">5.git log: </span>Check the user log ,Understand
+        what someone has changed.
+      </p>
+      <p>
+        <span class="blog-para"
+          >6.git config --global user.name “Enter your name” : </span
+        >This command helps to set your name Globally ,means set this name for
+        all repositories.
+      </p>
+      <p>
+        <span class="blog-para"
+          >7.git config--global user.email “Enter your email” : </span
+        >This command helps to set your email Globally ,means set this email for
+        all repositories.
+      </p>
+
+      <h4>Command for modified file to original file</h4>
+      <p>
+        <span class="blog-para"> git reset “file name”:</span>reset the commit
+      </p>
+      <p>
+        <span class="blog-para">2 git checkout “file name”:</span>commit for
+        file
+      </p>
+      <p>
+        <span class="blog-para">3 git checkout . :</span> old/previous Commit
+        for all file
+      </p>
+
+      <h4>Staging basic in git</h4>
+      <p><span class="blog-para">1 git add -A : </span>Stages for all file</p>
+      <p>
+        <span class="blog-para">2 git add . : </span>stages for new and modified
+        files but without deleted files.
+      </p>
+      <p>
+        <span class="blog-para">3 git add -u: </span>stages for modified and
+        deleted files but without new files.
+      </p>
+
+      <h4>Command for cloning the repository.</h4>
+      
+      <p><span class="blog-para">command : </span>git clone “Enter SHA url”</p>
+
+      <p><span class="blog-para">Ignoring the file: </span>Suppose in your project some file that you do not push
+      on your repository that kinds of all files you can simply ignore. For
+      example .exe and .c file in c programming language</p>
+      
+      <p><span class="blog-para">1 touch .gitignore : </span>Create a new black file </p>
+      <p><span class="blog-para">2 Notepad .gitignore : </span>In this file write the file name that you want to ignore </p>
+    
+      <p><span class="blog-para">Branching </span>Suppose you change something or add something in your project but not change the original project. In that
+      time you can create your own branch and add changes in your branch and then you can test the code and merge with the master branch.</p>
+      
+      <p><span class="blog-para">1 git branch “branch name” : </span>Create own branch </p>
+      <p><span class="blog-para">2 git checkout “branch name” :</span> Switch to the branch </p>
+      <p><span class="blog-para">2.1: git add . </span></p>
+      <p><span class="blog-para">2.2: git commit -m “commit” </span></p>
+      <p><span class="blog-para">2.3: git push origin “your branch name”</span></p>
+
+      <h4>Your new branch merge with master branch</h4>
+
+      <p><span class="blog-para">1 git checkout master </p>
+      <p><span class="blog-para">2 git merge “your branch name” </p>
+      <p><span class="blog-para">3 git push -u origine master </p>
+      
+      <p><span class="blog-para">Delete Branch</span> Suppose you create a new branch and changes in that branch after
+      merging these changes with master branch. so your branch work is done.
+      They occupy extra memory, after merge with master there is no need for a
+      new branch hence you can simply delete this branch.</p>
+      <p><span class="blog-para">1 git branch -d “branch name” :</span> This command deletes your branch locally. </p>
+      <p><span class="blog-para">2 git push origin --delete “branch name”: </span>This command deletesyour branch remotely.</p>
+    </div>
+    <!-- footer start here -->
+    <footer class="footer">
+      <div class="footer-header">I'am in social media</div>
+      <ul class="social-links no-bullet-item">
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/KaleChaitanya">Github</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="linkedin.com/in/chaitanya-kale-850b0a231"
+            >LinkedIn</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="#">Facebook</a>
+        </li>
+      </ul>
+    </footer>
+    <!-- footer ends here -->
+  </body>
+</html>
